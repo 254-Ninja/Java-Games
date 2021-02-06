@@ -9,9 +9,13 @@ public class RecursionIsCool {
 		if(n == 0) {
 			System.out.println("done!");
 		}
-	//	System.out.println("hi");
-	//	sayHi();
+	
+	
+	else {
+		System.out.println("hi");
+		sayHi(n);
 	}
+		}
 	//Base case
 
 }
