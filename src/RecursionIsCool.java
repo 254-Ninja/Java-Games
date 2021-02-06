@@ -13,6 +13,7 @@ public class RecursionIsCool {
 	
 	else {
 		System.out.println("hi");
+		n--;
 		sayHi(n);
 	}
 		}
