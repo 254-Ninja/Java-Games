@@ -8,11 +8,11 @@ public class TicTacToe {
 				{' ', '|', ' ', '|', ' '}, 
 				{'-', '+', '-', '+', '-'}, 
 				{' ', '|', ' ', '|', ' '}};
-		
+		printGameBoard(gameBoard);
 		
 	}
 	
-	public static void printGameBoard() {
+	public static void printGameBoard(char[][] gameBoard) {
 		
 		for(char[] row : gameBoard) {
 			for(char c : row) {
