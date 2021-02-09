@@ -8,6 +8,12 @@ public class TicTacToe {
 				{' ', '|', ' ', '|', ' '}, 
 				{'-', '+', '-', '+', '-'}, 
 				{' ', '|', ' ', '|', ' '}};
+		
+		for(char[] row : gameBoard) {
+			for(char c : row) {
+				System.out.println(c);
+			}
+		}
 	}
 
 }
