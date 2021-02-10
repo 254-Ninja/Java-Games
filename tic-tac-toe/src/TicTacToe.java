@@ -54,6 +54,7 @@ public class TicTacToe {
 			   gameBoard[4][4] = 'X';
 			   break;
 		}
+		printGameBoard(gameBoard);
 	}
 	
 	public static void printGameBoard(char[][] gameBoard) {
