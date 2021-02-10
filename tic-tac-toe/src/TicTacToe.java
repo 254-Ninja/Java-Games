@@ -22,7 +22,7 @@ public class TicTacToe {
 		
 		Random rand = new Random();
 		int cpuPos = rand.nextInt(9) + 1;
-		placePiece(gameBoard, pos, "cpu");
+		placePiece(gameBoard, cpuPos, "cpu");
 		
 		printGameBoard(gameBoard);
 	}
