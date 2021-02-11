@@ -40,7 +40,7 @@ public class TicTacToe {
 	
 	public static void placePiece(char [][] gameBoard, int pos, String user) { 
 		
-		char symbol = ' ';
+		char symbol = 'x';
 		if(user.equals("player")) {
 			symbol = 'X';
 			
