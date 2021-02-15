@@ -14,18 +14,21 @@ public class TicTacToe {
 		printGameBoard(gameBoard);
 		
 		Scanner scan = new Scanner(System.in);
-		System.out.println("Enter your placement (1-9):");
-		int playerPos = scan.nextInt();
 		
+		while(true) {			
+			System.out.println("Enter your placement (1-9):");
+			int playerPos = scan.nextInt();				
+			
+			placePiece(gameBoard, playerPos, "player");
+			
+			Random rand = new Random();
+			int cpuPos = rand.nextInt(9) + 1;
+			placePiece(gameBoard, cpuPos, "cpu");
+			
+			printGameBoard(gameBoard);
+			
+		}
 		
-		
-		placePiece(gameBoard, playerPos, "player");
-		
-		Random rand = new Random();
-		int cpuPos = rand.nextInt(9) + 1;
-		placePiece(gameBoard, cpuPos, "cpu");
-		
-		printGameBoard(gameBoard);
 	}
 	
 	public static void printGameBoard(char[][] gameBoard) {
@@ -42,13 +45,16 @@ public class TicTacToe {
 	public static void placePiece(char [][] gameBoard, int pos, String user) { 
 		
 		char symbol = ' ';
+		
 		if(user.equals("player")) {
 			
-			symbol = 'O';
+			symbol = 'X';
 			
-		}else if(user.equals("cpu")) {}
+		} else if(user.equals("cpu")) {
 		
-		symbol = 'X';
+		symbol = '0';
+		
+		}
 		
 		switch(pos) {
 		   case 1:
