@@ -10,15 +10,16 @@ public class TicTacToe {
 				{' ', '|', ' ', '|', ' '}, 
 				{'-', '+', '-', '+', '-'}, 
 				{' ', '|', ' ', '|', ' '}};
+		
 		printGameBoard(gameBoard);
 		
 		Scanner scan = new Scanner(System.in);
-		System.out.println("Enter your placement (1-9)");
-		int pos = scan.nextInt();
+		System.out.println("Enter your placement (1-9):");
+		int playerPos = scan.nextInt();
 		
-		System.out.println(pos);
 		
-		placePiece(gameBoard, pos, "player");
+		
+		placePiece(gameBoard, playerPos, "player");
 		
 		Random rand = new Random();
 		int cpuPos = rand.nextInt(9) + 1;
@@ -40,12 +41,14 @@ public class TicTacToe {
 	
 	public static void placePiece(char [][] gameBoard, int pos, String user) { 
 		
-		char symbol = 'x';
+		char symbol = ' ';
 		if(user.equals("player")) {
-			symbol = 'X';
+			
+			symbol = 'O';
 			
 		}else if(user.equals("cpu")) {}
-		symbol = 'O';
+		
+		symbol = 'X';
 		
 		switch(pos) {
 		   case 1:
