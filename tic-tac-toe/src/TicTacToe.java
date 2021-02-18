@@ -1,3 +1,5 @@
+import java.util.Arrays;
+import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -97,6 +99,9 @@ public class TicTacToe {
 		
 	}
 	public static String checkWinner() {
+		
+		List topRow = Arrays.asList(1, 2, 3);
+		
 		return "";
 		
 	}
