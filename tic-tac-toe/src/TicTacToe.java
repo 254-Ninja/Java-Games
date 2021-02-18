@@ -33,8 +33,9 @@ public class TicTacToe {
 			
 			printGameBoard(gameBoard);
 			
+			checkWinner();
+			
 		}
-		
 		
 	}
 	
@@ -128,6 +129,8 @@ public class TicTacToe {
 				return "YOU WON";
 		   }else if(cpuPositions.contains(l)) {
 			   return "COMP WINS";
+		   }else if(playerPositions.size() + cpuPositions.size() == 9) {
+			   return "Draw";
 		   }
 		}
 		
