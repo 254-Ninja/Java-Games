@@ -123,6 +123,14 @@ public class TicTacToe {
 		winning.add(cross1);
 		winning.add(cross2);
 		
+		for(List l : winning) {
+			if(playerPositions.containsAll(l)) {
+				return "YOU WON";
+		   }else if(cpuPositions.contains(l)) {
+			   return "COMP WINS";
+		   }
+		}
+		
 		return "";
 		
 	}
