@@ -28,6 +28,10 @@ public class Gamepanel extends JPanel implements Runnable{
 	}
 	public void point(Graphics g) {
 		
+		for(int i - 0 ; i < WIDTH/10 ; i++) {
+			
+		}
+		
 	}
 
 	@Override
