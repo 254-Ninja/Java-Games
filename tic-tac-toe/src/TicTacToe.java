@@ -17,13 +17,14 @@ public class TicTacToe {
 				{'-', '+', '-', '+', '-'}, 
 				{' ', '|', ' ', '|', ' '}};
 		
-		printGameBoard(gameBoard);
-		
+		printGameBoard(gameBoard);		
 		
 		while(true) {
 			Scanner scan = new Scanner(System.in);
 			System.out.println("Enter your placement (1-9):");
-			int playerPos = scan.nextInt();				
+			int playerPos = scan.nextInt();	
+			while(playerPositions.contains(playerPos) || cpuPositions.contains(playerPositions));
+			System.out.println("position taken!");
 			
 			placePiece(gameBoard, playerPos, "player");
 			
