@@ -46,8 +46,7 @@ public class TicTacToe {
 				System.out.print(c);
 			}
 			System.out.println();
-		}
-		
+		}		
 	}
 	
 	public static void placePiece(char [][] gameBoard, int pos, String user) { 
@@ -57,9 +56,9 @@ public class TicTacToe {
 		if(user.equals("player")) {
 			
 			symbol = 'X';
-			
+			playerPositions.add(pos);
 		} else if(user.equals("cpu")) {
-		
+		    cpuPositions.add(pos);
 		symbol = '0';
 		
 		}
