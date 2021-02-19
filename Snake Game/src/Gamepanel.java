@@ -1,3 +1,5 @@
+import java.awt.Dimension;
+
 import javax.swing.JPanel;
 
 public class Gamepanel extends JPanel{
@@ -8,6 +10,9 @@ public class Gamepanel extends JPanel{
 	public static final int WIDTH = 500, HEIGHT = 500;
 
 	public Gamepanel() {
+		
+		setPreferredSize(new Dimension(WIDTH, HEIGHT));
+		
 		
 	}
 
