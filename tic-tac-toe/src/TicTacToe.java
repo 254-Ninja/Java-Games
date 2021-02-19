@@ -33,10 +33,10 @@ public class TicTacToe {
 			
 			printGameBoard(gameBoard);
 			
-			checkWinner();
+			String result = checkWinner();
+			System.out.println(result);
 			
-		}
-		
+		}		
 	}
 	
 	public static void printGameBoard(char[][] gameBoard) {
