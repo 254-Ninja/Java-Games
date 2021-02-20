@@ -28,9 +28,9 @@ public class Gamepanel extends JPanel implements Runnable{
 	}
 	public void point(Graphics g) {
 		
-		for(int i - 0 ; i < WIDTH/10 ; i++) {
-			
-		}
+		for (int i = 0; i < WIDTH / 10; i++) {
+            g.drawLine(i * 10, 0, i * 10, HEIGHT);
+        }
 		
 	}
 
